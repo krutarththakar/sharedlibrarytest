@@ -1,7 +1,9 @@
 @Library('javahome-demo') _
 
 pipeline{
-    agent any
+    agent{
+        label 'Myubuntu'
+         }
      stages{
         stage('Demo'){
          steps{
