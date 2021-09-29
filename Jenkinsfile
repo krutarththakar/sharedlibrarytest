@@ -1,15 +1,12 @@
 @Library('javahome-demo') _
 
 pipeline{
-    agent{
-        label 'Myubuntu'
-         }
+    agent any
      stages{
         stage('Demo'){
          steps{
             welcome("Krutarth Thakar")
          }
         }
-    }
-    
+    }   
 }
